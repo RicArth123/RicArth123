@@ -1,0 +1,85 @@
+<HTML>
+	<Head>
+		<title>Unidad 4.4</title>
+		<style>
+		
+			body{
+					background-image: url('Fondo.jpg');
+				}
+			h1
+			{
+				font-Family: Lucida Calligraphy;
+					color: blue;
+			}
+			p
+			{
+				font-Family: Lucida Calligraphy;
+					color: white;
+			}
+			div
+			{
+				background-color: black;
+				text-align: left;
+				margin-left: auto;
+				margin-right: auto;
+				font-Family: Lucida Calligraphy;
+					color: white;
+					width: 1200 px;
+			}
+		</style>
+	</Head>
+	
+	<Body>
+		<div>
+		<h1><a href= "pagina.html"> Unidad 4</a> </h1>
+		<hr>
+		</div>
+		<p> &nbsp </p>
+		<div>
+		<hr>
+		<h2> 4.4 Sistemas de memoria distribuida: Multicomputadores</h2>
+		<h2> 4.4.1 Redes De Interconexión Estática</h2>
+		<p> &nbsp </p>
+		<p>Las redes estáticas emplean enlaces directos fijos entre los nodos. Estos enlaces,
+		   una vez fabricado el sistema son difíciles de cambiar, por lo que la escalabilidad de
+		   estas topologías es baja. Las redes estáticas pueden utilizarse con eficiencia en
+		   los sistemas en que pueden predecirse el tipo de tráfico de comunicaciones entre
+		   sus procesadores.</p>
+		<p>Clases de redes de interconexión:</p>
+		<p>Formación lineal: Se trata de una red unidimensional en que los nodos se
+		   conectan cada uno con el siguiente medianteN-1 enlaces formando una línea.</p>
+		<p>Mallas y toros: Esta red de interconexión es muy utilizada en la práctica. Las
+		   redes en toro son mallas en que sus filas y columnas tienen conexiones en anillo,
+		   esto contribuye a disminuir su diámetro. Esta pequeña modificación permite
+		   convertir a las mallas en estructuras simétricas y además reduce su diámetro a la
+		   mitad.</p>
+		<p>Cluster</p>
+		<p>Es un grupo de ordenadores débilmente acoplados que trabajan en estrecha
+		   colaboración, de modo que en algunos aspectos pueden considerarse como un solo
+		   equipo. Los clústeres se componen de varias máquinas independientes conectadas por
+		   una red. Mientras que las máquinas de un clúster no tienen que ser simétricas</p>
+		<p>Los clúster son usualmente empleados
+		   para mejorar el rendimiento y la disponibilidad por encima de la que es provista por un solo computador
+		   típicamente siendo más económico que computadores individuales de rapidez y disponibilidad comparables.</p>
+		<p>Programación de Cluster</p>
+		<p>Estos clúster están diseñados y optimizados para correr programas paralelos. En este caso, los
+		   programas tienen que ser hechos específicamente para funcionar en forma paralela.
+		   Cuando se programa un modelo en una plataforma multiprocesadores es necesario usar
+		   esquemas de programación paralela. Las bibliotecas son las que permiten paralelizacion de
+		   tareas. En el caso de los clúster SCALI, portar programas hechos con bibliotecas MPI es directo
+		   gracias al uso de biblioteca SCAMPI.</p>
+		<p>Consideraciones sobre rendimiento del Cluester</p>	
+		<p>Para diseñar, implementar, probar y mantener un clúster se requiere un
+		   entendimiento básico pero claro de hardware de computadoras, de redes de
+		   computadoras y de sistemas operativos y la habilidad para investigar algunos
+		   tópicos especializados, como dispositivos de interconexión de Alta velocidad, tal vez
+		   reintroducirse a lenguajes de programación como FORTRAN y librerías para el
+		   desarrollo de aplicaciones como MPI.</p>
+		<p>Una vez escogido un sistema operativo, dígase Linux, se requiere algo de
+		   experiencia en la administración de sistemas Linux y en la forma de realizar
+		   conexiones de red. De manera lógica, cada nodo del clúster tiene una parte de
+		   hardware y otra de software. El hardware está compuesto por procesadores,
+		   memoria, interfaz de red y discos duros entre otros.</p>
+		</div>
+	</Body>
+</HTML>

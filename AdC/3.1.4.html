@@ -1,0 +1,61 @@
+<HTML>
+	<Head>
+		<title>Unidad 3.1.4</title>
+		<style>
+		
+			body{
+					background-image: url('Fondo.jpg');
+				}
+			h1
+			{
+				font-Family: Lucida Calligraphy;
+					color: blue;
+			}
+			p
+			{
+				font-Family: Lucida Calligraphy;
+					color: white;
+			}
+			div
+			{
+				background-color: black;
+				text-align: left;
+				margin-left: auto;
+				margin-right: auto;
+				font-Family: Lucida Calligraphy;
+					color: white;
+					width: 1200 px;
+			}
+		</style>
+	</Head>
+	
+	<Body>
+		<div>
+		<h1><a href= "pagina.html"> Unidad 3</a> </h1>
+		<hr>
+		</div>
+		<p> &nbsp </p>
+		<div>
+		<hr>
+		<h2> 3.1 Chipset</h2>
+		<h2> 3.1.4 Controlador de interrupciones</h2>
+		<p> &nbsp </p>
+		<p>Este circuito integrado controla las interrupciones del sistema. Como el microprocesador sólo
+		   posee dos entradas de interrupción, y puede controlar muchas más, es necesario algún
+		   integrado que no permita ello. aunque ya no es un chip separado, la interfaz 8259A sigue
+		   siendo proporcionada por el Platform Controller Hub o el chipset Southbridge en las placas
+		   base x86 modernas .
+
+		   Supongamos que no queda ninguna interrupción pendiente y el CPU está trabajando en el
+		   Programa principal.</p>
+		<p>Al activarse una línea de interrupción, el 8259 verifica que no haya otra interrupción
+		   pendiente, y si no la hay, envía una señal a través del pin INTR hacia el pin INTR del CPU</p>
+		<p>adicionalmente, envía a través del bus de datos, el número de interrupción que se ha
+		   activado, de tal manera que el CPU ya sabe qué servicio de interrupción va a usar.</p>
+		<p>Una vez que recibió el CPU este valor, activa su pin INTA, indicando que ya recibió y está
+		   ejecutando el servicio</p>
+		<p>Una vez que el CPU termina, el pin INTA se
+		   desactiva, indicando al 8259 que está listo para procesar otras interrupciones.</p>
+		</div>
+	</Body>
+</HTML>

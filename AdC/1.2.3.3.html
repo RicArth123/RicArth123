@@ -1,0 +1,58 @@
+<HTML>
+	<Head>
+		<title>Unidad 1.2.3.3</title>
+		<style>
+		
+			body{
+					background-image: url('Fondo.jpg');
+				}
+			h1
+			{
+				font-Family: Lucida Calligraphy;
+					color: blue;
+			}
+			p
+			{
+				font-Family: Lucida Calligraphy;
+					color: white;
+			}
+			div
+			{
+				background-color: black;
+				text-align: left;
+				margin-left: auto;
+				margin-right: auto;
+				font-Family: Lucida Calligraphy;
+					color: white;
+					width: 1200 px;
+			}
+		</style>
+	</Head>
+	
+	<Body>
+		<div>
+		<h1><a href= "1.2.3.html"> 1.2.3</a> </h1>
+		<hr>
+		</div>
+		<p> &nbsp </p>
+		<div>
+		<hr>
+		<h2> 1.2.3 Entrada y salida</h2>
+		<h2> 1.2.3.3 E/S mediante interrupciones</h2>
+		<p> &nbsp </p>
+		<p>Se puede instalar una rutina de atención o servicio de interrupción. Cuando la CPU
+		   recibe notificación de la interrupción detiene el programa en ejecución, ejecuta la ISR ) y
+		   finalmente devuelve el control al programa, restaurando su estado anterior. Por tanto,
+		   una condición importante a cumplir es que una ISR debe preservar el estado del
+		   procesador</p>
+		<p>Un ejemplo básico de una ISR es una rutina que maneja eventos del teclado, como
+		   presionar o soltar una tecla. Cada vez que se presiona una tecla, el ISR procesa la
+		   entrada. Por ejemplo, si presiona y mantiene presionada la tecla de flecha derecha en
+		   un archivo de texto, el ISR le indicará a la CPU que la tecla de flecha derecha está
+		   presionada. La CPU envía esta información al procesador de texto activo o al programa
+		   de edición de texto, que moverá el cursor hacia la derecha. Cuando suelta la llave, el
+		   ISR maneja el evento de "llave arriba". Esto interrumpe el estado anterior de "tecla
+		   presionada", que indica al programa que deje de mover el cursor.</p>
+		</div>
+	</Body>
+</HTML>
